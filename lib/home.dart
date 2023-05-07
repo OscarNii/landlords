@@ -3,6 +3,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:landlords/login.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -40,12 +41,14 @@ class MyHomePage extends StatelessWidget {
                         fontWeight: FontWeight.normal),
                   ))),
           Center(
+            
             child: ClipRRect(
+              
               borderRadius: BorderRadius.circular(25),
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
                 child: Container(
-                  height: 500,
+                  height: 550,
                   width: 300,
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(
@@ -57,7 +60,8 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
             ),
-          )
+          ),
+          SignInPage()
         ],
       ),
     );
