@@ -37,18 +37,19 @@ class MyHomePage extends StatelessWidget {
                 child: BackdropFilter(
                   filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
                   child: Container(
-                      width: 90,
-                      height: 40,
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(41, 255, 255, 255).withOpacity(
-                          (0.1),
-                        ),
-                        borderRadius: BorderRadius.circular(26),
-                        border: Border.all(
-                            width: 4,
-                            color: Color.fromARGB(255, 230, 220, 220)),
+                    width: 90,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(41, 255, 255, 255).withOpacity(
+                        (0.1),
                       ),
-                      child: Center(
+                      borderRadius: BorderRadius.circular(26),
+                      border: Border.all(
+                          width: 4, color: Color.fromARGB(255, 230, 220, 220)),
+                    ),
+                    child: Center(
+                      child: TextButton(
+                        onPressed: () {},
                         child: Text(
                           "skip",
                           style: TextStyle(
@@ -56,7 +57,9 @@ class MyHomePage extends StatelessWidget {
                               color: Colors.white,
                               fontWeight: FontWeight.normal),
                         ),
-                      )),
+                      ),
+                    ),
+                  ),
                 ),
               )),
           Positioned(
