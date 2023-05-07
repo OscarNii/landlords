@@ -1,6 +1,6 @@
 # landlords
 
-A new Flutter project.
+A new Flutter project based on House renting and purchasing.
 
 ## Getting Started
 
