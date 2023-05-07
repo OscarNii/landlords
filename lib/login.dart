@@ -25,7 +25,7 @@ class SignInPage extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 210.0),
+            padding: const EdgeInsets.only(top: 300.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[

@@ -41,22 +41,23 @@ class MyHomePage extends StatelessWidget {
                         fontWeight: FontWeight.normal),
                   ))),
           Positioned(
-            bottom: 70,
-            right: 40,
+            bottom: 90,
+            right: 45,
             child: Center(
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(25),
                 child: BackdropFilter(
                   filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
                   child: Container(
-                    height: 550,
+                    height: 500,
                     width: 300,
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(
+                      color: Color.fromARGB(41, 255, 255, 255).withOpacity(
                         (0.1),
                       ),
                       borderRadius: BorderRadius.circular(26),
-                      border: Border.all(width: 4, color: Colors.black),
+                      border: Border.all(
+                          width: 4, color: Color.fromARGB(255, 230, 220, 220)),
                     ),
                   ),
                 ),
