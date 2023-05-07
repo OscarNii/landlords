@@ -40,28 +40,30 @@ class MyHomePage extends StatelessWidget {
                         color: Colors.white,
                         fontWeight: FontWeight.normal),
                   ))),
-          Center(
-            
-            child: ClipRRect(
-              
-              borderRadius: BorderRadius.circular(25),
-              child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
-                child: Container(
-                  height: 550,
-                  width: 300,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(
-                      (0.1),
+          Positioned(
+            bottom: 70,
+            right: 40,
+            child: Center(
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(25),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                  child: Container(
+                    height: 550,
+                    width: 300,
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(
+                        (0.1),
+                      ),
+                      borderRadius: BorderRadius.circular(26),
+                      border: Border.all(width: 4, color: Colors.black),
                     ),
-                    borderRadius: BorderRadius.circular(26),
-                    border: Border.all(width: 4, color: Colors.black),
                   ),
                 ),
               ),
             ),
           ),
-          SignInPage()
+          Center(child: SignInPage())
         ],
       ),
     );
