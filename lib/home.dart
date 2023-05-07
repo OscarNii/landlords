@@ -21,6 +21,7 @@ class MyHomePage extends StatelessWidget {
           ),
           Positioned(
               top: 80,
+              left: 8,
               child: Text(
                 'Hotel & House \neverywhere in \nthe world',
                 style: TextStyle(
@@ -31,15 +32,33 @@ class MyHomePage extends StatelessWidget {
           Positioned(
               bottom: 20,
               right: 30,
-              child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    "skip",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
-                        fontWeight: FontWeight.normal),
-                  ))),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(25),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                  child: Container(
+                      width: 90,
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(41, 255, 255, 255).withOpacity(
+                          (0.1),
+                        ),
+                        borderRadius: BorderRadius.circular(26),
+                        border: Border.all(
+                            width: 4,
+                            color: Color.fromARGB(255, 230, 220, 220)),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "skip",
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                              fontWeight: FontWeight.normal),
+                        ),
+                      )),
+                ),
+              )),
           Positioned(
             bottom: 90,
             right: 45,
