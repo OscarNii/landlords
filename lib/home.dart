@@ -4,6 +4,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:landlords/login.dart';
+import 'package:landlords/pages/rooms.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -49,7 +50,12 @@ class MyHomePage extends StatelessWidget {
                     ),
                     child: Center(
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Rooms(),
+                      ),
+                    );},
                         child: Text(
                           "skip",
                           style: TextStyle(
