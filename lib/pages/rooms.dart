@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:landlords/roomlist/list.dart';
 
 import '../roomlist/roomlist1.dart';
 
@@ -10,55 +12,47 @@ class Rooms extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 223, 219, 219),
-      appBar: AppBar(),
-      body: SafeArea(
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "welcome",
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 25,
-                          ),
-                        ),
-                        Text(
-                          "Pinto Clarks",
-                          style: TextStyle(
-                              color: Color.fromARGB(255, 3, 38, 67),
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold),
-                        )
-                      ],
-                    ),
-                    CircleAvatar(
-                      backgroundImage: AssetImage("assets/mic.png"),
-                      radius: 30,
-                    )
-                  ],
+      backgroundColor: Colors.transparent,
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            pinned: true,
+            backgroundColor: Colors.black,
+            forceElevated: true,
+            title: Center(
+              child: Text(
+                "LandLords",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
                 ),
               ),
-              SizedBox(
-                height: 10,
+            ),
+            expandedHeight: 250,
+            flexibleSpace: FlexibleSpaceBar(
+              background: Image.asset(
+                "assets/house2.jpeg",
+                fit: BoxFit.cover,
               ),
-              roomsList1(),
-              roomsList1(),
-              roomsList1(),
-              roomsList1(),
-              roomsList1(),
-            ],
+            ),
           ),
-        ),
+          SliverToBoxAdapter(
+            child: ListBody(children: [
+              Column(
+                children: [
+                  ListWheelScrollView(
+                      itemExtent: 320,
+                      diameterRatio: 2.5,
+                      children: [
+                        List1(),
+                        List1(),
+                        List1(),
+                      ]),
+                ],
+              )
+            ]),
+          )
+        ],
       ),
     );
   }

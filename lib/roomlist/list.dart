@@ -1,18 +1,13 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, duplicate_ignore
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 
-class roomList1 extends StatelessWidget {
-  const roomList1({super.key});
+class List1 extends StatelessWidget {
+  const List1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-SizedBox roomsList1() {
-  return SizedBox(
+    return SizedBox(
     width: double.infinity,
     height: 220,
     child: Stack(
@@ -123,5 +118,6 @@ SizedBox roomsList1() {
         ),
       ],
     ),
-  );
+  );;
+  }
 }
