@@ -91,7 +91,7 @@ class List1 extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 140,
+            bottom: 50,
             left: 170,
             child: ElevatedButton(
                 onPressed: () {},
