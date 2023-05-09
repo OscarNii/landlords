@@ -40,14 +40,24 @@ class Rooms extends StatelessWidget {
             child: ListBody(children: [
               Column(
                 children: [
-                  ListWheelScrollView(
-                      itemExtent: 320,
-                      diameterRatio: 2.5,
-                      children: [
-                        List1(),
-                        List1(),
-                        List1(),
-                      ]),
+                  Container(
+                    width: double.infinity,
+                    height: 300,
+                    color: Colors.black,
+                    child: ListWheelScrollView(
+                        itemExtent: 220,
+                        diameterRatio: 1.5,
+                        children: [
+                          List1(),
+                          List1(),
+                          List1(),
+                          List1(),
+                          List1(),
+                          List1(),
+                          List1(),
+                          List1(),
+                        ]),
+                  ),
                 ],
               )
             ]),
