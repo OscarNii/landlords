@@ -26,7 +26,7 @@ class Rooms extends StatelessWidget {
             expandedHeight: 250,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                "assets/house4.jpeg",
+                "assets/house4.webp",
                 fit: BoxFit.cover,
               ),
             ),
@@ -49,6 +49,10 @@ class Rooms extends StatelessWidget {
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(10),
+                                image: DecorationImage(
+                                  image: AssetImage("assets/house1.png"),
+                                  fit: BoxFit.fill,
+                                ),
                               ),
                             ),
                             TextButton(onPressed: () {}, child: Text("Menu"))

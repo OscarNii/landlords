@@ -13,7 +13,7 @@ class House1 extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           image: DecorationImage(
             image: AssetImage("assets/house1.jpeg"),
-            fit: BoxFit.fitHeight,
+            fit: BoxFit.cover,
           )),
     );
   }
