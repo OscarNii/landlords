@@ -2,6 +2,7 @@
 
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:landlords/Houses/house1.dart';
 import 'package:landlords/roomlist/list.dart';
 
 class Rooms extends StatelessWidget {
@@ -14,7 +15,7 @@ class Rooms extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            pinned: false,
+            pinned: true,
             actions: [
               Icon(Icons.search),
               SizedBox(width: 10),
@@ -25,7 +26,7 @@ class Rooms extends StatelessWidget {
             expandedHeight: 250,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                "assets/house2.jpeg",
+                "assets/house4.jpeg",
                 fit: BoxFit.cover,
               ),
             ),
@@ -163,6 +164,47 @@ class Rooms extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                             ),
                           ),
+                          Container(
+                            height: 230,
+                            width: 190,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 30),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            height: 230,
+                            width: 190,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                          Container(
+                            height: 230,
+                            width: 190,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 15),
+                  Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          House1(),
                           Container(
                             height: 230,
                             width: 190,
