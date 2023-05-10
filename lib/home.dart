@@ -26,6 +26,7 @@ class MyHomePage extends StatelessWidget {
               child: Text(
                 'Hotel & House \neverywhere in \nthe world',
                 style: TextStyle(
+                    fontFamily: "Lobster",
                     fontSize: 25,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
@@ -50,12 +51,14 @@ class MyHomePage extends StatelessWidget {
                     ),
                     child: Center(
                       child: TextButton(
-                        onPressed: () {Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Rooms(),
-                      ),
-                    );},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Rooms(),
+                            ),
+                          );
+                        },
                         child: Text(
                           "skip",
                           style: TextStyle(
