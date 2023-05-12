@@ -119,6 +119,5 @@ class List1 extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }

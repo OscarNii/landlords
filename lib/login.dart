@@ -1,8 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:landlords/home.dart';
 import 'package:sign_in_button/sign_in_button.dart';
 
 // ignore: use_key_in_widget_constructors

@@ -11,7 +11,7 @@ class House1 extends StatelessWidget {
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),
-          image: DecorationImage(
+          image: const DecorationImage(
             image: AssetImage("assets/house1.jpeg"),
             fit: BoxFit.cover,
           )),
