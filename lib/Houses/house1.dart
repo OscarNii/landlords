@@ -11,10 +11,20 @@ class House1 extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
-        image: const DecorationImage(
-          image: AssetImage("assets/house1.jpeg"),
-          fit: BoxFit.cover,
-        ),
+      ),
+      child: Column(
+        children: [
+          Container(
+            height: 150,
+            width: 190,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                image: const DecorationImage(
+                  image: AssetImage("assets/house1.jpeg"),
+                  fit: BoxFit.cover,
+                )),
+          )
+        ],
       ),
     );
   }
