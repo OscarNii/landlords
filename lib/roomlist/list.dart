@@ -20,39 +20,37 @@ class List1 extends StatelessWidget {
               decoration: BoxDecoration(
                   border: Border.all(
                     width: 2,
-                    color: Colors.white,
+                    color: Colors.red,
                   ),
                   borderRadius: BorderRadius.circular(25),
-                  color: Colors.green),
+                  color: Colors.white),
             ),
           ),
           Positioned(
-            left: 180,
+            left: 200,
             top: 15,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
-                  // ignore: prefer_const_literals_to_create_immutables
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 8.0),
                       child: Text(
                         "\$2.998",
                         style: TextStyle(
-                          color: Colors.white,
-                        ),
+                            color: Colors.black, fontWeight: FontWeight.bold),
                       ),
                     ),
                     SizedBox(width: 7),
                     Text(
                       "Per Day",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                     ),
                     SizedBox(
-                      width: 54,
+                      width: 45,
                     ),
                     Icon(
                       Icons.favorite,
@@ -68,7 +66,7 @@ class List1 extends StatelessWidget {
                   child: Text(
                     "Corner House",
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                     ),
@@ -83,7 +81,7 @@ class List1 extends StatelessWidget {
                     ),
                     SizedBox(width: 1),
                     Text(
-                      "3994 Stockert Hollow Road,\n san Francisco, USA",
+                      "3994 Stockert Hollow \n Road,san Francisco, \n USA",
                     )
                   ],
                 )
@@ -91,14 +89,14 @@ class List1 extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 50,
-            left: 170,
+            bottom: 40,
+            left: 190,
             child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
                     shadowColor: Colors.green,
-                    side: BorderSide(color: Colors.white, width: 2)),
+                    side: BorderSide(color: Colors.red, width: 2)),
                 child: Text("Book Now")),
           ),
           Positioned(
@@ -110,7 +108,7 @@ class List1 extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(28),
                 color: Colors.white,
-                border: Border.all(width: 3, color: Colors.white),
+                border: Border.all(width: 3, color: Colors.red),
                 image: DecorationImage(
                     image: AssetImage("assets/house1.jpeg"), fit: BoxFit.cover),
               ),

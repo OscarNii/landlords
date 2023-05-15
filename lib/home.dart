@@ -26,10 +26,9 @@ class MyHomePage extends StatelessWidget {
               child: Text(
                 'Hotel & House \neverywhere in \nthe world',
                 style: TextStyle(
-                    fontFamily: "Lobster",
                     fontSize: 25,
                     color: Colors.white,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.normal),
               )),
           Positioned(
               bottom: 20,
