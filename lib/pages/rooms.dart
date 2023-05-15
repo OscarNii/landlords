@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:landlords/Houses/house1.dart';
 import 'package:landlords/roomlist/list.dart';
 
@@ -247,6 +248,43 @@ class Rooms extends StatelessWidget {
             ]),
           )
         ],
+      ),
+      bottomNavigationBar: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: GNav(tabs: [
+          GButton(
+            icon: Icons.add_home_work_outlined,
+            text: 'Home',
+            textColor: Colors.white,
+            iconColor: Colors.white,
+          ),
+          GButton(
+            onPressed: () {},
+            icon: Icons.play_circle,
+            text: 'Courses',
+            textColor: Colors.white,
+            iconColor: Colors.white,
+          ),
+          GButton(
+            icon: Icons.shopping_cart,
+            text: 'Cart',
+            textColor: Colors.white,
+            iconColor: Colors.white,
+          ),
+          GButton(
+            icon: Icons.favorite,
+            text: 'Favorite',
+            textColor: Colors.white,
+            iconColor: Colors.white,
+          ),
+          GButton(
+            onPressed: () {},
+            icon: Icons.person,
+            text: 'Profile',
+            textColor: Colors.white,
+            iconColor: Colors.white,
+          ),
+        ]),
       ),
     );
   }

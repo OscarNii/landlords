@@ -5,27 +5,36 @@ class House1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 230,
-      width: 190,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Column(
-        children: [
-          Container(
-            height: 150,
-            width: 190,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25),
-                image: const DecorationImage(
-                  image: AssetImage("assets/house1.jpeg"),
-                  fit: BoxFit.cover,
-                )),
-          )
-        ],
-      ),
+    return Stack(
+      children: [
+        Container(
+          height: 230,
+          width: 190,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(23),
+            image: DecorationImage(
+              image: AssetImage("assets/house1.jpeg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(top: 190.0, left: 10),
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              foregroundColor: Colors.amber,
+              backgroundColor: Colors.white,
+              side: const BorderSide(
+                  color: Color.fromARGB(91, 68, 137, 255), width: 2),
+            ),
+            onPressed: () {},
+            child: const Text(
+              "Promoted to you",
+              style: TextStyle(color: Colors.black),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
