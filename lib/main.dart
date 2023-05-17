@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:landlords/Page%20View/pageview1.dart';
 
-import 'home.dart';
 
 void main() {
   runApp(const MyApp());

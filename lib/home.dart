@@ -3,8 +3,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:landlords/Next/next.dart';
 import 'package:landlords/login.dart';
-import 'package:landlords/pages/rooms.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -55,16 +55,17 @@ class MyHomePage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Rooms(),
+                              builder: (context) => const Next(),
                             ),
                           );
                         },
                         child: Text(
                           "skip",
                           style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.white,
-                              fontWeight: FontWeight.normal),
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.normal,
+                          ),
                         ),
                       ),
                     ),
@@ -72,8 +73,8 @@ class MyHomePage extends StatelessWidget {
                 ),
               )),
           Positioned(
-            bottom: 90,
-            right: 45,
+            bottom: 110,
+            right: 55,
             child: Center(
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(25),
