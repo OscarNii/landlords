@@ -13,15 +13,15 @@ class Next extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 20.0, sigmaY: 20),
-        child: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/background1.png"),
-              fit: BoxFit.fill,
-            ),
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/background1.png"),
+            fit: BoxFit.fill,
           ),
+        ),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 25.0, sigmaY: 25.0),
           child: CustomScrollView(
             slivers: [
               SliverAppBar(
