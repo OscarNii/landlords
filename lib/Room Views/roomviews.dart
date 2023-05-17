@@ -16,7 +16,8 @@ class RoomViews1 extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 0,
+          bottom: 15,
+          left: 15,
           child: Container(
             height: 240,
             width: 230,
