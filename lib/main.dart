@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:landlords/Page%20View/pageview1.dart';
 
 import 'home.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(),
-      home: const MyHomePage(),
+      home: const PageView1(),
     );
   }
 }
