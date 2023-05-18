@@ -15,11 +15,19 @@ class MyHomePage extends StatelessWidget {
       extendBody: true,
       body: Stack(
         children: [
-          Image.asset(
-            "assets/hotel.jpg",
-            fit: BoxFit.cover,
-            height: double.infinity,
-            width: double.infinity,
+          ShaderMask(
+            shaderCallback: (bounds) => const LinearGradient(
+              colors: [Color.fromARGB(228, 0, 0, 0), Colors.black12],
+              begin: Alignment.bottomCenter,
+              end: Alignment.center,
+            ).createShader(bounds),
+            blendMode: BlendMode.darken,
+            child: Image.asset(
+              "assets/hotel.jpg",
+              fit: BoxFit.cover,
+              height: double.infinity,
+              width: double.infinity,
+            ),
           ),
           Positioned(
               top: 80,

@@ -7,6 +7,8 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:landlords/Room%20Views/roomviews.dart';
 import 'package:landlords/roomlist/list.dart';
 
+import '../Room Views/roomviews2.dart';
+
 class Next extends StatelessWidget {
   const Next({super.key});
 
@@ -187,7 +189,7 @@ class Next extends StatelessWidget {
                       children: [
                         RoomViews1(),
                         SizedBox(width: 15),
-                        RoomViews1(),
+                        RoomViews2(),
                         SizedBox(width: 15),
                         RoomViews1(),
                         SizedBox(width: 15),
