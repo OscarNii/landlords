@@ -38,13 +38,11 @@ class PageView1 extends StatelessWidget {
               child: SelectionArea(
                   child: Column(
                 children: [
-                  Center(
-                    child: Text(
-                      "Find The Best Place",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 27,
-                      ),
+                  Text(
+                    "Find The Best Place",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 27,
                     ),
                   ),
                   Text("For Rent In Good Price")
@@ -52,15 +50,15 @@ class PageView1 extends StatelessWidget {
               )),
             ),
             Positioned(
-                bottom: 20,
-                right: 30,
+                bottom: 50,
+                right: 109,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(25),
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
                     child: Container(
-                      width: 90,
-                      height: 50,
+                      width: 200,
+                      height: 60,
                       decoration: BoxDecoration(
                         color:
                             const Color.fromARGB(41, 255, 255, 255).withOpacity(
@@ -82,7 +80,7 @@ class PageView1 extends StatelessWidget {
                             );
                           },
                           child: const Text(
-                            "skip",
+                            "GET STARTED",
                             style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,
@@ -97,13 +95,21 @@ class PageView1 extends StatelessWidget {
         ),
         Stack(
           children: [
-            Container(
-              height: double.infinity,
-              width: double.infinity,
-              decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/housepageview5.jpeg"),
-                      fit: BoxFit.cover)),
+            ShaderMask(
+              shaderCallback: (bounds) => const LinearGradient(
+                colors: [Colors.black, Colors.black12],
+                begin: Alignment.bottomCenter,
+                end: Alignment.center,
+              ).createShader(bounds),
+              blendMode: BlendMode.darken,
+              child: Container(
+                height: double.infinity,
+                width: double.infinity,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/housepageview5.jpeg"),
+                        fit: BoxFit.cover)),
+              ),
             ),
             Positioned(
                 bottom: 20,
@@ -151,13 +157,21 @@ class PageView1 extends StatelessWidget {
         ),
         Stack(
           children: [
-            Container(
-              height: double.infinity,
-              width: double.infinity,
-              decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/hotel.jpg"),
-                      fit: BoxFit.cover)),
+            ShaderMask(
+              shaderCallback: (bounds) => const LinearGradient(
+                colors: [Colors.black, Colors.black12],
+                begin: Alignment.bottomCenter,
+                end: Alignment.center,
+              ).createShader(bounds),
+              blendMode: BlendMode.darken,
+              child: Container(
+                height: double.infinity,
+                width: double.infinity,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/hotel.jpg"),
+                        fit: BoxFit.cover)),
+              ),
             ),
             Positioned(
                 bottom: 20,
@@ -205,13 +219,21 @@ class PageView1 extends StatelessWidget {
         ),
         Stack(
           children: [
-            Container(
-              height: double.infinity,
-              width: double.infinity,
-              decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/housepageview5.jpeg"),
-                      fit: BoxFit.cover)),
+            ShaderMask(
+              shaderCallback: (bounds) => const LinearGradient(
+                colors: [Colors.black, Colors.black12],
+                begin: Alignment.bottomCenter,
+                end: Alignment.center,
+              ).createShader(bounds),
+              blendMode: BlendMode.darken,
+              child: Container(
+                height: double.infinity,
+                width: double.infinity,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/housepageview5.jpeg"),
+                        fit: BoxFit.cover)),
+              ),
             ),
             Positioned(
                 bottom: 20,
