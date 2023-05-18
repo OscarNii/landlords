@@ -121,21 +121,24 @@ class Next extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Best Selling Estates",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Best Selling Estates",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
                         ),
-                      ),
-                      Text(
-                        "See more",
-                        style: TextStyle(color: Colors.white),
-                      )
-                    ],
+                        Text(
+                          "See more",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
                   ),
                   SizedBox(height: 10),
                   Container(
@@ -156,13 +159,44 @@ class Next extends StatelessWidget {
                           List1(),
                         ]),
                   ),
-                  SizedBox(height: 15),
-                  Column(
-                    children: [
-                      RoomViews1(),
-                      SizedBox(height: 20),
-                    ],
+                  SizedBox(height: 55),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Top Property",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 29,
+                          ),
+                        ),
+                        Text(
+                          "View All",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
                   ),
+                  SizedBox(height: 15),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        RoomViews1(),
+                        SizedBox(width: 15),
+                        RoomViews1(),
+                        SizedBox(width: 15),
+                        RoomViews1(),
+                        SizedBox(width: 15),
+                        RoomViews1(),
+                        SizedBox(width: 15),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 20),
                 ],
               )
             ]),

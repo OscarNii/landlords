@@ -35,28 +35,28 @@ class PageView1 extends StatelessWidget {
             ),
             const Positioned(
               bottom: 230,
-              right: 30,
+              right: 10,
               child: Text(
                 "Find The Best Place ",
                 style: TextStyle(
                   decoration: TextDecoration.none,
                   color: Colors.white,
-                  fontSize: 36,
-                  fontFamily: AutofillHints.givenName,
+                  fontSize: 50,
+                  fontFamily: "Lobster",
                   fontWeight: FontWeight.normal,
                 ),
               ),
             ),
             const Positioned(
               bottom: 180,
-              right: 30,
+              right: 60,
               child: Text(
                 "For Rent Good Price ",
                 style: TextStyle(
                     decoration: TextDecoration.none,
                     color: Colors.white,
                     fontSize: 36,
-                    fontFamily: AutofillHints.givenName,
+                    fontFamily: "Lobster",
                     fontWeight: FontWeight.normal),
               ),
             ),
@@ -122,16 +122,43 @@ class PageView1 extends StatelessWidget {
                         fit: BoxFit.cover)),
               ),
             ),
+            const Positioned(
+              bottom: 230,
+              right: 10,
+              child: Text(
+                "Find The Best Place ",
+                style: TextStyle(
+                  decoration: TextDecoration.none,
+                  color: Colors.white,
+                  fontSize: 50,
+                  fontFamily: "Lobster",
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            const Positioned(
+              bottom: 180,
+              right: 60,
+              child: Text(
+                "For Rent Good Price ",
+                style: TextStyle(
+                    decoration: TextDecoration.none,
+                    color: Colors.white,
+                    fontSize: 36,
+                    fontFamily: "Lobster",
+                    fontWeight: FontWeight.normal),
+              ),
+            ),
             Positioned(
-                bottom: 20,
-                right: 30,
+                bottom: 50,
+                right: 109,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(25),
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
                     child: Container(
-                      width: 90,
-                      height: 50,
+                      width: 200,
+                      height: 60,
                       decoration: BoxDecoration(
                         color:
                             const Color.fromARGB(41, 255, 255, 255).withOpacity(
@@ -185,15 +212,15 @@ class PageView1 extends StatelessWidget {
               ),
             ),
             Positioned(
-                bottom: 20,
-                right: 30,
+                bottom: 50,
+                right: 109,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(25),
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
                     child: Container(
-                      width: 90,
-                      height: 50,
+                      width: 200,
+                      height: 60,
                       decoration: BoxDecoration(
                         color:
                             const Color.fromARGB(41, 255, 255, 255).withOpacity(
@@ -247,15 +274,15 @@ class PageView1 extends StatelessWidget {
               ),
             ),
             Positioned(
-                bottom: 20,
-                right: 30,
+                bottom: 50,
+                right: 109,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(25),
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
                     child: Container(
-                      width: 90,
-                      height: 50,
+                      width: 200,
+                      height: 60,
                       decoration: BoxDecoration(
                         color:
                             const Color.fromARGB(41, 255, 255, 255).withOpacity(
