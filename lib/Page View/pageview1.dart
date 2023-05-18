@@ -33,21 +33,32 @@ class PageView1 extends StatelessWidget {
                 ),
               ),
             ),
-            const DefaultTextStyle(
-              style: TextStyle(color: Colors.white, fontSize: 26),
-              child: SelectionArea(
-                  child: Column(
-                children: [
-                  Text(
-                    "Find The Best Place",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 27,
-                    ),
-                  ),
-                  Text("For Rent In Good Price")
-                ],
-              )),
+            const Positioned(
+              bottom: 230,
+              right: 30,
+              child: Text(
+                "Find The Best Place ",
+                style: TextStyle(
+                  decoration: TextDecoration.none,
+                  color: Colors.white,
+                  fontSize: 36,
+                  fontFamily: AutofillHints.givenName,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            const Positioned(
+              bottom: 180,
+              right: 30,
+              child: Text(
+                "For Rent Good Price ",
+                style: TextStyle(
+                    decoration: TextDecoration.none,
+                    color: Colors.white,
+                    fontSize: 36,
+                    fontFamily: AutofillHints.givenName,
+                    fontWeight: FontWeight.normal),
+              ),
             ),
             Positioned(
                 bottom: 50,
