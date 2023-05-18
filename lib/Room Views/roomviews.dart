@@ -73,13 +73,47 @@ class RoomViews1 extends StatelessWidget {
                   size: 15,
                 ),
               ),
-              SizedBox(width: 5),
+              SizedBox(width: 7),
               Text(
                 "food",
                 style: TextStyle(
                   color: Colors.white,
                 ),
-              )
+              ),
+              SizedBox(width: 7),
+              CircleAvatar(
+                radius: 10,
+                backgroundColor: Colors.white,
+                child: Icon(
+                  Icons.bathtub,
+                  color: Colors.black,
+                  size: 15,
+                ),
+              ),
+              SizedBox(width: 7),
+              Text(
+                "Bath",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(width: 7),
+              CircleAvatar(
+                radius: 10,
+                backgroundColor: Colors.white,
+                child: Icon(
+                  Icons.landslide,
+                  color: Colors.black,
+                  size: 15,
+                ),
+              ),
+              SizedBox(width: 7),
+              Text(
+                "1,045 ft 2",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ],
           ),
         ),
