@@ -13,15 +13,43 @@ class PageView1 extends StatelessWidget {
       children: [
         Stack(
           children: [
-            Container(
-              height: double.infinity,
-              width: double.infinity,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/hotel.jpg"),
-                  fit: BoxFit.cover,
+            ShaderMask(
+              shaderCallback: (bounds) => const LinearGradient(
+                colors: [Colors.black, Colors.black12],
+                begin: Alignment.bottomCenter,
+                end: Alignment.center,
+              ).createShader(bounds),
+              blendMode: BlendMode.darken,
+              child: Container(
+                height: double.infinity,
+                width: double.infinity,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("assets/hotel.jpg"),
+                    fit: BoxFit.cover,
+                    colorFilter:
+                        ColorFilter.mode(Colors.black26, BlendMode.darken),
+                  ),
                 ),
               ),
+            ),
+            const DefaultTextStyle(
+              style: TextStyle(color: Colors.white, fontSize: 26),
+              child: SelectionArea(
+                  child: Column(
+                children: [
+                  Center(
+                    child: Text(
+                      "Find The Best Place",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 27,
+                      ),
+                    ),
+                  ),
+                  Text("For Rent In Good Price")
+                ],
+              )),
             ),
             Positioned(
                 bottom: 20,
