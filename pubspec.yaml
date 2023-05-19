@@ -38,6 +38,8 @@ dependencies:
   animate_do: ^3.0.2
   sign_in_button: ^3.2.0
   google_nav_bar: ^5.0.6
+  material_color_utilities: ^0.2.0
+  device_preview: ^1.1.0
 
 dev_dependencies:
   flutter_test:

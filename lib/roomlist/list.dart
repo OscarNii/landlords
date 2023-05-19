@@ -20,10 +20,10 @@ class List1 extends StatelessWidget {
               decoration: BoxDecoration(
                   border: Border.all(
                     width: 2,
-                    color: Colors.red,
+                    color: Colors.white,
                   ),
                   borderRadius: BorderRadius.circular(25),
-                  color: Colors.white),
+                  color: Color.fromARGB(137, 255, 255, 255)),
             ),
           ),
           Positioned(
@@ -54,7 +54,7 @@ class List1 extends StatelessWidget {
                     ),
                     Icon(
                       Icons.favorite,
-                      color: Colors.red,
+                      color: Colors.white,
                     )
                   ],
                 ),
@@ -77,7 +77,7 @@ class List1 extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.location_on,
-                      color: Colors.red,
+                      color: Colors.white,
                     ),
                     SizedBox(width: 1),
                     Text(
@@ -96,7 +96,7 @@ class List1 extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
                     shadowColor: Colors.green,
-                    side: BorderSide(color: Colors.red, width: 2)),
+                    side: BorderSide(color: Colors.white, width: 2)),
                 child: Text("Book Now")),
           ),
           Positioned(
@@ -108,7 +108,7 @@ class List1 extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(28),
                 color: Colors.white,
-                border: Border.all(width: 3, color: Colors.red),
+                border: Border.all(width: 3, color: Colors.white),
                 image: DecorationImage(
                     image: AssetImage("assets/house1.jpeg"), fit: BoxFit.cover),
               ),
