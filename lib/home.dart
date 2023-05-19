@@ -104,7 +104,11 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
           ),
-          Center(child: SignInPage())
+          Positioned(
+            top: 56,
+            left: 115,
+            child: SignInPage(),
+          )
         ],
       ),
     );

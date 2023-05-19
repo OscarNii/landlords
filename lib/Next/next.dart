@@ -21,7 +21,7 @@ class Next extends StatelessWidget {
           SliverAppBar(
             backgroundColor: Colors.transparent,
             pinned: true,
-            actions: [
+            actions: const [
               Icon(Icons.search),
               SizedBox(width: 10),
               Icon(Icons.shopping_basket_sharp),
@@ -128,7 +128,7 @@ class Next extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Text(
                           "Best Selling Estates",
                           style: TextStyle(
@@ -151,7 +151,7 @@ class Next extends StatelessWidget {
                     child: ListWheelScrollView(
                         itemExtent: 220,
                         diameterRatio: 1.5,
-                        children: [
+                        children: const [
                           List1(),
                           List1(),
                           List1(),
@@ -167,7 +167,7 @@ class Next extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Text(
                           "Top Property",
                           style: TextStyle(
@@ -187,7 +187,7 @@ class Next extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
+                      children: const [
                         RoomViews1(),
                         SizedBox(width: 15),
                         RoomViews2(),
